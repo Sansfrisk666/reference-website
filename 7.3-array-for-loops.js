@@ -56,9 +56,15 @@ function problem2(){
 // Start function for problem #3
 function problem3(){
   console.log("Problem 3 output below");
+  var testArr = [1, 2, 3, 4];
+  doubleList(testArr);
+
 
 }
 
+function doubleList(arr){
+  var result = [];
+}
 
 // Start function for problem #4
 function problem4(){
