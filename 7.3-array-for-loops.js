@@ -64,6 +64,12 @@ function problem3(){
 
 function doubleList(arr){
   var result = [];
+  for (var i = 0; i < arr.length; i++){
+    var val = arr[i];
+    result.push(val);
+    result.push(val);
+  }
+  return result;
 }
 
 // Start function for problem #4
