@@ -50,16 +50,29 @@ function binarySearch(target, array) {
   // 1. Sort array
 
   // 2. Set the low index to 0 and high index to length - 1
+  var low = 0;
+  var high = array.length - 1;
 
+  while (low != high) {
   // 3. Set middle index to average of low and high
+  var mid = (high + low) / 2;
 
   // 4. If the middle index is the target, return the middle index
+  if (array[mid] == target){
+    return mid; 
+  }
 
   // 5. If the target element is less than the element at the middle index, set the high index to the middle index – 1
+  if (target < array[mid]){
+    high = mid - 1;
+  }
 
   // 6. If the target element is greater than the element at the middle index, set the low index to the middle index + 1
+  if (target > array[mid]){
+    low = mid + 1;
+  }
 
   // 7. Repeat steps 3-6 until low and high index are equal
-
+}
   // 8. Return -1 if element is not found
 }
