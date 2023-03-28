@@ -18,8 +18,27 @@ function getRandomList() {
 
 // Linear Search Algorithm
 function linearSearch(target, array) {
+  // Get array and target value (passed as parameters
 
+  // set a counter to i = 0
+  for (var i = 0; i < array.length; i++){
+  
+  // check if the element at arr[i] is equal to the target value
+    if (array[i] == target){
+      // if element matches, return index (i).
+      return i;
+    }
+    // if not match increment i++, continue loop to next element
+  }
+
+  // return -l to indicate the target value was not found
+  return -1;
 }
+
+var testArray = [5, 1, 8, 3, 2, 7];
+
+console.log(linearSearch(10, testArray));
+
 
 
 
